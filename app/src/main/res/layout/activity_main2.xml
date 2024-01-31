@@ -21,7 +21,7 @@
             app:srcCompat="@drawable/gymrats" />
 
         <EditText
-            android:id="@+id/editTextText"
+            android:id="@+id/etNome"
             android:layout_width="295dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="60dp"
@@ -33,7 +33,7 @@
             tools:ignore="MissingConstraints" />
 
         <EditText
-            android:id="@+id/editTextText2"
+            android:id="@+id/etApelido"
             android:layout_width="295dp"
             android:layout_height="40dp"
             android:layout_marginStart="60dp"
@@ -45,7 +45,7 @@
             tools:ignore="MissingConstraints" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnEnter"
             android:layout_width="190dp"
             android:layout_height="57dp"
             android:layout_marginLeft="110dp"
