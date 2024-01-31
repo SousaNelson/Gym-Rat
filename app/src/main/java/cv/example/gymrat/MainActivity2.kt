@@ -1,8 +1,5 @@
 package cv.example.gymrat
 
-import org.osmdroid.config.Configuration
-import org.osmdroid.tileprovider.tilesource.TileSourceFactory
-import org.osmdroid.views.MapView
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
