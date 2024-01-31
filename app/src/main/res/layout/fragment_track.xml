@@ -12,26 +12,27 @@
 
         <Button
             android:id="@+id/btnInfoTrack"
-            android:text="Info"
-            android:textSize="22sp"
-            android:fontFamily="sans-serif-black"
             android:layout_width="200dp"
             android:layout_height="60dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:backgroundTint="@color/azulzinh"
+            android:fontFamily="sans-serif-black"
+            android:text="Info"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:backgroundTint="@color/azulzinh"
-            />
+            android:layout_marginBottom="40dp"/>
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:text="Selecione o local de treino"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="40dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            tools:ignore="MissingConstraints" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
