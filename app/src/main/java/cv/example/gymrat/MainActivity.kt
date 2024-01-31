@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
         loading = findViewById(R.id.loading)
         loading.setOnClickListener {
-            val intent = Intent(this@MainActivity, MainActivity2::class.java)
+            val intent = Intent(this@MainActivity, MainActivity3::class.java)
             startActivity(intent)
         }
 
