@@ -45,11 +45,8 @@ class MainActivity2 : AppCompatActivity() {
         if(eApelido.isEmpty()){
             etApelido.error = "Please enter name"
         }
-
         val RatID = dbRef.push().key!!
-
-        val theRats = UserModule(RatID,eNome,eApelido) // os valores sao passados para o modulo
-
+        val theRats = RatModule(RatID,eNome,eApelido) // os valores sao passados para o modulo
         dbRef.child(RatID).setValue(theRats)//envia os dados para a db
 
     }

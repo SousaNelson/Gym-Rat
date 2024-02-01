@@ -20,17 +20,15 @@ class TrackFragment : Fragment() {
         binding = FragmentTrackBinding.inflate(inflater, container, false)
         val rootView = binding.root
 
-        // Encontrar o WebView pelo ID no layout XML
+        // Encontrar id do webView
         val webView = binding.webView
-
-        // Habilitar JavaScript se necessário
+        // em caso de haver javascript no site, abaixo é para habilita-lo
         webView.settings.javaScriptEnabled = true
-
         // Configurar o WebViewClient para tratar a navegação dentro do WebView
         webView.webViewClient = WebViewClient()
-
-        // Carregar o website desejado
+        // Carregar o website que se deseja
         webView.loadUrl("https://www.google.com/maps/@16.8818466,-24.9872705,15z?entry=ttu")
+
 
         return rootView
     }

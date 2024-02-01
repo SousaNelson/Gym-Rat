@@ -1,5 +1,7 @@
 package cv.example.gymrat
 
+import LocationFragment
+import TrainFragment
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.viewpager.widget.ViewPager
@@ -20,9 +22,9 @@ class MainActivity3 : AppCompatActivity() {
         viewpager = binding.viewpager
 
         val adapter = ViewPagerAdapter(supportFragmentManager)
+        adapter.addFragment(LocationFragment(), "Location")
         adapter.addFragment(TrainFragment(), "Train")
         adapter.addFragment(TrackFragment(), "Track")
-        adapter.addFragment(LocationFragment(), "Location")
         viewpager.adapter = adapter
         tab.setupWithViewPager(viewpager)
     }
