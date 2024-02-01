@@ -4,17 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D9D9D9"
-    tools:context=".TrackFragment">
+    android:background="#D9D9D9">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-        <org.osmdroid.views.MapView
-            android:id="@+id/mapView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
 
         <Button
             android:id="@+id/btnInfoTrack"
