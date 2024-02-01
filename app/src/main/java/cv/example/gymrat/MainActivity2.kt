@@ -1,5 +1,6 @@
 package cv.example.gymrat
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -26,6 +27,10 @@ class MainActivity2 : AppCompatActivity() {
 
         btnEnter.setOnClickListener{
             saveRat()
+
+            // apos salvar o nome e apelido, inicia a nova activity
+            val intent = Intent(this, MainActivity3::class.java)
+            startActivity(intent)
         }
     }
     private fun saveRat(){
@@ -46,5 +51,6 @@ class MainActivity2 : AppCompatActivity() {
         val theRats = UserModule(RatID,eNome,eApelido) // os valores sao passados para o modulo
 
         dbRef.child(RatID).setValue(theRats)//envia os dados para a db
+
     }
 }

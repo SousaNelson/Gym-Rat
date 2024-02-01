@@ -17,11 +17,20 @@ class TrackFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val rootView = inflater.inflate(R.layout.fragment_track, container, false)
+        binding = FragmentTrackBinding.inflate(inflater, container, false)
+        val rootView = binding.root
 
-        //val webView: WebView = rootView.findViewById(R.id.webView)
-        //webView.webViewClient = WebViewClient()
-        //webView.loadUrl("https://www.uta.cv") // Substitua pela URL desejada
+        // Encontrar o WebView pelo ID no layout XML
+        val webView = binding.webView
+
+        // Habilitar JavaScript se necessário
+        webView.settings.javaScriptEnabled = true
+
+        // Configurar o WebViewClient para tratar a navegação dentro do WebView
+        webView.webViewClient = WebViewClient()
+
+        // Carregar o website desejado
+        webView.loadUrl("https://www.google.com/maps/@16.8818466,-24.9872705,15z?entry=ttu")
 
         return rootView
     }
